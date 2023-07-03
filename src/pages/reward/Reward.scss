@@ -1,0 +1,31 @@
+.reward {
+  display: flex;
+  justify-content: center;
+  .container {
+    align-items: center;
+    width: 50rem;
+    margin-bottom: 10rem;
+
+    .rewards {
+      padding: 0 2rem;
+      &__content {
+        .medal {
+          display: flex;
+          justify-content: end;
+
+          img {
+            width: 2rem;
+          }
+        }
+      }
+
+      .reward__card {
+        // background-color: red;
+
+        .reward__img {
+          width: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+.home {
+  display: flex;
+  justify-content: center;
+  .container {
+    align-items: center;
+    width: 50rem;
+    margin-bottom: 10rem;
+
+    // .user {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   padding: 1rem 2rem;
+    //   img {
+    //     width: 5rem;
+    //   }
+    //   p {
+    //     font-size: 2rem;
+    //   }
+
+    //   .reward {
+    //     background-color: blueviolet;
+    //   }
+
+    //   .box-img {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: start;
+    //   }
+    // }
+
+    // .feature {
+    //   padding: 2rem;
+    //   img {
+    //     width: 100%;
+    //   }
+    // }
+
+    .task {
+      p {
+        font-size: 1.6rem;
+        color: var(--color-white);
+        margin-left: 2rem;
+      }
+    }
+
+    .tasks {
+      padding: 0 2rem;
+
+      .refer {
+        position: relative;
+        display: block;
+        background-color: var(--color-primary-dark);
+        margin-top: 5rem;
+        padding: 1.2rem 2rem;
+        text-align: left;
+        border-radius: 1.3rem;
+        height: 20rem;
+        width: 100%;
+
+        .plus {
+          position: absolute;
+          top: -3rem;
+          left: 40rem;
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          gap: 0.7rem;
+
+          @media only screen and (max-width: $bp-large) {
+            // left: 0;
+            right: 0;
+          }
+
+          img {
+            width: 1.5rem;
+            background-color: yellow;
+          }
+          span {
+            color: var(--color-white);
+            font-size: 1.5rem;
+          }
+        }
+
+        h1 {
+          color: var(--color-white);
+          font-size: 1.6rem;
+        }
+        p {
+          color: #666;
+          font-size: 1.5rem;
+        }
+
+        &__link {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+          padding: 2rem;
+          border-radius: 1.5rem;
+          margin-top: 2rem;
+
+          span {
+            font-size: 1.3rem;
+          }
+
+          img {
+            width: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .twitter {
+      }
+    }
+  }
+}

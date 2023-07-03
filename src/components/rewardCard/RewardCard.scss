@@ -1,0 +1,37 @@
+.rewardcard {
+  background-color: var(--color-primary-dark);
+  margin-top: 2rem;
+  border-radius: 1.2rem;
+  padding: 1.5rem 2rem;
+}
+
+.card__content {
+  display: flex;
+  // justify-content: space-around;
+  align-items: flex-start;
+
+  .card__img {
+    width: 8rem;
+    display: block;
+    // align-self: flex-start;
+    // margin-top: -5rem;
+  }
+
+  .card__text-box {
+    h2 {
+      color: var(--color-white);
+      font-size: 1.6rem;
+      /* Add more styles as needed */
+    }
+
+    p {
+      color: var(--color-text);
+      font-size: 16px;
+      /* Add more styles as needed */
+    }
+  }
+}
+
+.card__content--gap {
+  gap: 2rem;
+}

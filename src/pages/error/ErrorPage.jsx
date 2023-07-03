@@ -1,12 +1,12 @@
 import React from "react";
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
-// import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/navbar/NavBar";
 
 const ErrorPage = () => {
   const error = useRouteError();
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <div style={{ padding: "5px" }}>
         <h1>Oops...</h1>
         <p>

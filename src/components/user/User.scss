@@ -1,0 +1,22 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  img {
+    width: 5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  .reward {
+    background-color: blueviolet;
+  }
+
+  .box-img {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+}
