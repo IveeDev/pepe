@@ -1,0 +1,83 @@
+.profile {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    align-items: center;
+    width: 50rem;
+    margin-bottom: 10rem;
+
+    .profile__detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      img {
+        width: 50%;
+      }
+
+      .profile__text {
+        text-align: center;
+        p {
+          font-size: 1.6rem;
+          color: var(--color-white);
+        }
+
+        .profile__name {
+          margin-top: 0.8rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        .profile__email {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .connect {
+      margin-top: 2rem;
+      padding: 0 2rem;
+      &__wallet {
+        // background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-primary-dark);
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+
+        button {
+          border: none;
+          outline: none;
+          color: var(--color-text);
+          background-color: #226a80;
+          padding: 4px 1.5rem;
+          border-radius: 0.7rem;
+          cursor: pointer;
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: var(--color-text);
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      margin: 5rem auto;
+
+      a {
+        // display: block;
+        img {
+          width: 3rem;
+        }
+      }
+    }
+  }
+}

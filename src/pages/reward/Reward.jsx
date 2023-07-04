@@ -1,28 +1,25 @@
-import User from "../../components/user/User";
 import user from "../../assets/img/pepe-img.png";
-import Slider from "../../components/slider/Slider";
-import Task from "../../components/tasks/Task";
-import Coin from "../../components/coin/Coin";
-import Card from "../../components/card/Card";
-import medal from "../../assets/img/medal.png";
 import first from "../../assets/img/reward-1.png";
 import second from "../../assets/img/reward-2.png";
 import third from "../../assets/img/reward-3.png";
-import "./Reward.scss";
 import Medal from "../../components/medal/Medal";
 import RewardCard from "../../components/rewardCard/RewardCard";
+import Sliders from "../../components/slider/Sliders";
+import Task from "../../components/tasks/Task";
+import User from "../../components/user/User";
+import "./Reward.scss";
 
 const Reward = () => {
   return (
     <div className="reward">
       <div className="container">
         <User username={"iviidev"} earnedCoin={100} />
-        <Slider />
+        <Sliders />
         <Task task={"Rewards"} />
 
         <div className="rewards">
           <div className="reward__card">
-            <Medal text={"2nd Place"} />
+            <Medal text={"1st Place"} color={"#FFBA57"} />
             <RewardCard>
               <div className="card__content">
                 <img src={first} alt="first" className="card__img" />
@@ -38,7 +35,7 @@ const Reward = () => {
           </div>
 
           <div className="reward__card">
-            <Medal text={"2nd Place"} />
+            <Medal text={"2nd Place"} color={"#9E9E9E"} />
             <RewardCard>
               <div className="card__content">
                 <img src={second} alt="third" className="card__img" />
@@ -54,7 +51,7 @@ const Reward = () => {
           </div>
 
           <div className="reward__card">
-            <Medal text={"3rd Place"} />
+            <Medal text={"3rd Place"} color={"#CE7430"} />
             <RewardCard>
               <div className="card__content">
                 <img src={third} alt="third" className="card__img" />
@@ -71,7 +68,7 @@ const Reward = () => {
           </div>
 
           <div className="reward__card">
-            <Medal text={"Other place"} />
+            <Medal text={"Other place"} color={"#CE7430"} />
             <RewardCard>
               <div className="card__content card__content--gap">
                 <img src={user} alt="user" className="card__img" />

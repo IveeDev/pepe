@@ -1,14 +1,22 @@
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
 .nav {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   background-color: var(--color-primary);
 
   .container {
     position: fixed;
     bottom: 0;
-    width: 60rem;
-    background-color: var(--color-primary);
+    width: 100%;
+    background-color: var(--color-primary-dark);
     z-index: 1000;
     text-align: center;
     box-shadow: var(--shadow-dark);
@@ -27,6 +35,11 @@
       align-items: center;
       padding-top: 1rem;
 
+      @media only screen and (max-width: $bp-smallest) {
+        gap: 5rem;
+        width: 100%;
+      }
+
       li {
         font-size: 1.5rem;
         color: var(--color-white);
@@ -37,6 +50,10 @@
         .link {
           text-align: left;
           display: block;
+
+          &.active {
+            color: cyan;
+          }
         }
       }
     }

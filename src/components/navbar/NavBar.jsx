@@ -3,7 +3,7 @@ import home from "../../assets/img/home.png";
 import reward from "../../assets/img/reward.png";
 import user from "../../assets/img/user.png";
 import award from "../../assets/img/award.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,31 +11,31 @@ const NavBar = () => {
       <div className="container">
         <ul>
           <li>
-            <Link className="link" to="/">
+            <NavLink className="link" activeClassName="active" exact to="/">
               <img src={home} alt="home" />
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link className="link" to="/reward">
+            <NavLink className="link" to="/reward">
               <img src={reward} alt="home" />
               Rewards
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <img src={award} alt="home" />
-            <Link className="link" to="/wallet">
+            <NavLink className="link" to="/wallet">
+              <img src={award} alt="home" />
               Wallet
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <img src={user} alt="home" />
-            <Link className="link" to="/profile">
+            <NavLink className="link" to="/profile">
+              <img src={user} alt="home" />
               Profile
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

@@ -2,10 +2,10 @@ import React from "react";
 import medal from "../../assets/img/medal.png";
 import "./Medal.scss";
 
-const Medal = ({ text }) => {
+const Medal = ({ text, color }) => {
   return (
     <div className="medal">
-      <img src={medal} alt="medal" />
+      <img src={medal} alt="medal" style={{ background: color }} />
       <span>{text}</span>
     </div>
   );

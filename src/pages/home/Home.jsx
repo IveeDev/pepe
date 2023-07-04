@@ -1,43 +1,40 @@
+import copys from "copy-to-clipboard";
 import "./Home.scss";
-import user from "../../assets/img/pepe-img.png";
-import banner from "../../assets/img/Banner.png";
 import copy from "../../assets/img/copy.png";
-import plus from "../../assets/img/plus.png";
 import Card from "../../components/card/Card";
 import Coin from "../../components/coin/Coin";
 import twitter from "../../assets/img/twitter.png";
 import telegram from "../../assets/img/telegram.svg";
 import discord from "../../assets/img/discord.svg";
 import User from "../../components/user/User";
-import Slider from "../../components/slider/Slider";
+import Sliders from "../../components/slider/Sliders";
 import Task from "../../components/tasks/Task";
 
 const Home = () => {
+  const handleCopy = () => {
+    const linkText = document.getElementById("linkText").innerText;
+    copys(linkText);
+
+    // Optionally, provide user feedback that the text has been copied
+    alert("Link copied to clipboard!");
+  };
   return (
     <div className="home">
       <div className="container">
         <User username={"Iviidev"} earnedCoin={100} />
 
-        <Slider />
+        <Sliders />
         <Task task={"Tasks to be completed"} />
-
-        {/* <div className="task">
-          <p>Task to be completed</p>
-        </div> */}
 
         <div className="tasks">
           <div className="refer">
             <Coin text={100} />
-            {/* <div className="plus">
-              <img src={plus} alt="plus" />
-              <span>100</span>
-            </div> */}
+
             <h1>Refer your friends</h1>
             <p>Earn as you invite your friend</p>
-            {/* <p>Earn as you invite your friend</p> */}
             <div className="refer__link">
-              <span>https://airdrop.acquaeth.xyz/username</span>
-              <img src={copy} alt="copy" />
+              <span id="linkText">https://airdrop.acquaeth.xyz/username</span>
+              <img src={copy} alt="copy" onClick={handleCopy} />
             </div>
           </div>
 

@@ -3,20 +3,43 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  img {
-    width: 5rem;
-  }
-  p {
-    font-size: 2rem;
-  }
 
   .reward {
-    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #12515a;
+    width: 10rem;
+    border: 2px solid var(--color-white);
+    padding: 0.1rem 1rem;
+    border-radius: 8px;
+
+    p {
+      font-size: 2rem;
+      color: var(--color-white);
+    }
+
+    img {
+      width: 2rem;
+      background-color: yellow;
+      border-radius: 1rem;
+    }
   }
 
   .box-img {
     display: flex;
     justify-content: center;
     align-items: start;
+    gap: 1rem;
+
+    img {
+      width: 5rem;
+    }
+    p {
+      font-size: 2rem;
+      color: var(--color-white);
+      text-transform: uppercase;
+      align-self: center;
+    }
   }
 }
