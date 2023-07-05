@@ -8,6 +8,7 @@ import discord from "../../assets/img/discord.svg";
 import doc from "../../assets/img/doc.svg";
 import ProfileCard from "../../components/profilecard/ProfileCard";
 import "./Profile.scss";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -30,15 +31,17 @@ const Profile = () => {
           </div>
         </div>
 
-        <ProfileCard>
-          <div className="profilecard__detail">
-            <div className="text-box">
-              <h1>You are at - level</h1>
-              <p>Check the rewards tab to see what you can earn.</p>
+        <Link to="/reward" className="link">
+          <ProfileCard>
+            <div className="profilecard__detail">
+              <div className="text-box">
+                <h1>You are at - level</h1>
+                <p>Check the rewards tab to see what you can earn.</p>
+              </div>
+              <img src={level} alt="points" />
             </div>
-            <img src={level} alt="points" />
-          </div>
-        </ProfileCard>
+          </ProfileCard>
+        </Link>
 
         <ProfileCard>
           <div className="profilecard__detail">
