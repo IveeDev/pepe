@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "../../components/modal/Modal";
 import "./Signup.scss";
 import Overlay from "../../components/overlay/Overlay";
-import pepe from "../../assets/img/pepe-img.png";
+import logo from "../../assets/img/logo.png";
 
 const Signup = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -18,7 +18,7 @@ const Signup = () => {
     <div className="register">
       <div className="container">
         <div className="logo">
-          <img src={pepe} alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <form className="form">
           <h1>Sign up for early access to Aquaeth</h1>
