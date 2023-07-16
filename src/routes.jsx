@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import Reward from "./pages/reward/Reward";
 import Wallet from "./pages/wallet/Wallet";
+import Signup from "./pages/signup/Signup";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Home /> },
+      { index: true, element: <Signup /> },
+      { path: "home", element: <Home /> },
       { path: "profile", element: <Profile /> },
       { path: "reward", element: <Reward /> },
       { path: "wallet", element: <Wallet /> },

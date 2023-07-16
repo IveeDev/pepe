@@ -11,7 +11,7 @@ const NavBar = () => {
       <div className="container">
         <ul>
           <li>
-            <NavLink className="link" activeClassName="active" exact to="/">
+            <NavLink className="link" activeClassName="active" exact to="/home">
               <img src={home} alt="home" />
               Home
             </NavLink>

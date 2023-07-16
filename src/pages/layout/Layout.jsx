@@ -1,11 +1,14 @@
 import React from "react";
 import NavBar from "../../components/navbar/NavBar";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
+  const location = useLocation();
+  const isSignupPage = location.pathname === "/";
+
   return (
     <>
-      <NavBar />
+      {!isSignupPage && <NavBar />}
       <Outlet />
     </>
   );
